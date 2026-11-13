@@ -10,7 +10,7 @@ if ! command -v pkg-config >/dev/null 2>&1; then
     exit 1
 fi
 
-modules="x11 xft xinerama xrender imlib2 x11-xcb xcb xcb-res fontconfig freetype2"
+modules="x11 xft xinerama xrender imlib2 x11-xcb xcb xcb-res xcb-xfixes fontconfig freetype2"
 failed=0
 for module in $modules; do
     if pkg-config --exists "$module"; then
