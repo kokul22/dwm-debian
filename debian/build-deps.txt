@@ -1,0 +1,17 @@
+# Debian 13 Trixie build dependencies for upstream dwm-titus config.mk
+# Keep this list limited to compile-time dependencies. Runtime desktop packages
+# are mapped separately after the upstream helper inventory.
+build-essential
+git
+make
+pkgconf
+libx11-dev
+libxft-dev
+libxinerama-dev
+libxrender-dev
+libimlib2-dev
+libx11-xcb-dev
+libxcb1-dev
+libxcb-res0-dev
+libfontconfig1-dev
+libfreetype-dev
