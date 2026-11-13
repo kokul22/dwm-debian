@@ -35,7 +35,7 @@ $SUDO apt-get install --no-install-recommends -y "$@"
 
 echo
 echo "Checking upstream pkg-config modules..."
-modules="x11 xft xinerama xrender imlib2 x11-xcb xcb xcb-res fontconfig freetype2"
+modules="x11 xft xinerama xrender imlib2 x11-xcb xcb xcb-res xcb-xfixes fontconfig freetype2"
 missing=""
 for module in $modules; do
     if ! pkg-config --exists "$module"; then
